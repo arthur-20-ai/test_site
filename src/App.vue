@@ -263,10 +263,12 @@ html {
 }
 
 body {
-    max-width: 75em; /* Limite la largeur de la page */
-    margin: 0 auto; /* Centre la page horizontalement */
+    width: 100vw; /* Assure que le corps occupe toute la largeur de la fenêtre */
+    height: 100vh; /* Assure que le corps occupe toute la hauteur de la fenêtre */
+    margin: 0; /* Supprime les marges par défaut du navigateur */
     overflow-x: hidden; /* Empêche le débordement horizontal */
 }
+
 
 .page-container {
   position: absolute;

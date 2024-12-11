@@ -10,10 +10,8 @@
             <div class="wrapper">
                 <div class="text-rect"></div>
                 <div class="titre-acc">C N P :</div>
-                <div class="text-acc">Construction Nanceeinnes de Pesage depuis 1985.
-                    <router-link to="/QuiSommesNous">Découvrir</router-link>
+                <div class="text-acc">Construction Nancéeinnes de Pesage depuis 1985.
                 </div>
-                <!-- <div class="button-decouvrir">Découvrir</div> -->
             </div>
             <img class="image-acc" src="../../assets/photo/Pont_bascule.jpg" alt="image 1">
         </div>
@@ -31,6 +29,47 @@
         </div>
     </div>
     </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <br>
         <br>
         <br>
@@ -62,7 +101,7 @@
         </router-link>
         <router-link to="/Humidimetre">
             <div class="triangleacc triangle3">
-                <div class="label">Humidimètre et analysateur <br> de protéine</div>
+                <div class="label">Humidimètre et analyseur <br> de protéine</div>
             </div>
         </router-link>
         </div>
@@ -114,7 +153,7 @@ h1 {
 .triangleacc-container {
     display: flex;
     justify-content: center;
-    gap: 5em;
+    gap: 2em;
 }
 
 .triangleacc-container a:link,
@@ -251,7 +290,7 @@ h1 {
     transition: 0.5s ease-in-out;
 }
 
-.image-acc {
+/* .image-acc {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -261,7 +300,18 @@ h1 {
     left: -40px;
     width: 1277px;
     height: 657px;
-    align-items: center; */
+    align-items: center;
+} */
+
+
+.image-acc {
+    width: 100vw; /* Largeur égale à 100% de la largeur de la fenêtre */
+    height: 100vh; /* Hauteur égale à 100% de la hauteur de la fenêtre */
+    object-fit: cover; /* Recouvre toute la zone tout en conservant les proportions */
+    margin: 0; /* Pas d'espaces */
+    padding: 0; /* Pas de marges internes */
+    top: 0; /* Positionne l'image en haut */
+    left: -10%; /* Positionne l'image à gauche */
 }
 
 .secteur {
@@ -281,15 +331,16 @@ h1 {
 }
 
 .slider-2 {
-    position: relative;
-    width: 120%;
-    height: 40em;
-    top: -0.6em;
-    left: -2em;
-    margin: 0px auto;
-    overflow: hidden;
-    border: 1px solid #000000;
+    position: absolute; /* Fixe l'élément pour remplir tout l'écran */
+    width: 100vw; /* Largeur égale à 100% de la fenêtre */
+    height: 100vh; /* Hauteur égale à 100% de la fenêtre */
+    top: 0; /* Place le haut de l'élément au sommet de la fenêtre */
+    left: 0; /* Place le côté gauche de l'élément à gauche de la fenêtre */
+    margin: 0; /* Supprime tout espace supplémentaire */
+    overflow: hidden; /* Empêche tout dépassement de contenu */
+    /* border: 1px solid #000000; Optionnel si nécessaire */
 }
+
 .slider-2 .slider {
   height: 100%;
   animation: slider-2 15s infinite ease-in-out;
