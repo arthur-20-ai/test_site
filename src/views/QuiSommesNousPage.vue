@@ -9,15 +9,35 @@
         <br>
         <br>
         <br>
-        <h1 style="text-decoration: underline;">HISTOIRE DE CNP SARL :</h1>
+        <div class="titre-qsn"> 
+            Qui sommes nous ?
+        </div> 
         <br>
         <br>
         <br>
-        <div class="histoire-cnp"> <br><br> Cnp Sarl a été créé en 1983 par une équipe de techniciens expérimentés dans le pesage; en particulier les pont bascules routier et ferroviaires. <br><br>
-        A cette époque, la fonte industrialisation de notre Lorraine, a permis à l'entreprise CNP de développer rapidemment. Nos locaux, ateliers et bureaux sont situés dans la zone industrielle ("Prouvé") au nord de l'agglomération de Nancy, avec un accés facile aux camions de livraison. <br><br>L'activité de CNP se maintient dans la métrologie légale qui concerne l'ensemble des matériels de pesage dédiés au commerce,
-        aussi bien dans l'industrie que le commerce et les P.M.E. <br><br>
-        CNP a égalemment une activité spécifique dans la mesure de la teneur en eau des céréales. Les humidimètres utilisés pour effectuer ces mesures repondent à une réglementation voisine de celle des instrument de pesage.
+        <div class="histoire-cnp"> <br><br> Fondée en 1983 par une équipe de techniciens spécialisés dans le pesage, CNP Sarl s'est rapidement imposée comme un acteur clé dans le domaine des ponts bascules routiers et ferroviaires.
+            <br><br>
+            <br><br>
+            À l'époque, l'industrialisation de la Lorraine a favorisé le développement rapide de l'entreprise. Nos locaux, comprenant ateliers et bureaux, sont situés dans la zone industrielle de Prouvé, au nord de Nancy, offrant ainsi un accès facile aux camions de livraison.
+            <br><br>
+            <br><br>
+            CNP Sarl se distingue par son expertise en métrologie légale, spécialisée dans les équipements de pesage destinés au commerce, à l'industrie et aux PME. Nous avons également développé une expertise dans la mesure de la teneur en eau des céréales, avec des humidimètres conformes à une réglementation proche de celle des instruments de pesage.
+        <br><br>
+        <br><br>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <br>
         <br>
         <br>
@@ -55,17 +75,21 @@
 
 @import url('https://fonts.cdnfonts.com/css/century-schoolbook');
 
+.titre-qsn {
+    font-size: 40px;
+    font-weight: bold;
+}
+
 .histoire-cnp {
     position: absolute;
     width: 70%;
-    height: 400px;
-    right: 15%;
-    border: 2px solid black;
-    background-color: rgba(18, 62, 99, 0.3);
+    height: 100%;
+    left: 15%;
+    /* border: 2px solid rgba(0, 0, 0, 0.5) */
     border-radius: 10px;
     color: black;
     text-align: center;
-    font-size: 19px;
+    font-size: 23px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow-y: none;
     transition: 0.5s ease-in-out;

@@ -31,7 +31,6 @@
       </ul>
     </div>
 
-    <!-- <router-link to="/Produit"> Produits</router-link> -->
     <router-link to="/Partenaire"> Partenaire</router-link>
     <router-link to="/Contact"> Contact</router-link>
     <span class="navbar"></span>
@@ -52,15 +51,13 @@
         <li>✅ Mer 8h-12h 13h30-17h15</li>
         <li>✅ Jeu 8h-12h 13h30-17h15</li>
         <li>✅ Ven 8h-12h 13h30-17h15</li>
-        <li>❌ Sam Fermé</li>
-        <li>❌ Dim Fermé</li>
       </ul>
     </div>
     <div class="contact-bloc">
       <ul class="contact-footer">
         <router-link class="router-text" to="/Contact">
 
-          <h3 class="titre-contact">Nous-contactez:</h3>
+          <h3 class="titre-contact">Contact :</h3>
           <li>📞 : +33 3 83 30 14 44</li>
           <li><pre>🏠 : 27 Rue André Fruchard,
             54320 Maxéville</pre>
@@ -140,24 +137,20 @@
 
 <style>
 
-body {
-  background-color: rgba(62, 137, 198, 0.3);
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 .date_cnp {
   position: relative;
-  right: 370px;
+  right: 23em;
   text-decoration: none;
   color: white;
 }
 
 .mention-leg {
   position: relative;
-  right: 350px;
+  right: 22em;
   text-decoration: none;
   color: white;
 }
@@ -169,9 +162,9 @@ html {
 
 .black-footer {
   position: absolute;
-  width: 120%;
-  height: 20px;
-  left: -250px;
+  width: 130%;
+  height: 1,5em;
+  left: -20.5em;
   background-color: #000000;
   z-index: 2;
 }
@@ -181,9 +174,9 @@ html {
   flex: 1 0 auto;
   border-top: 3px dotted black;
   width: 110%;
-  bottom: -10px;
-  left: -37px;
-  height: 300px; /* La hauteur totale du footer */
+  bottom: -0.8em;
+  left: -3em;
+  height: 20em; /* La hauteur totale du footer */
   overflow: hidden;
   display: flex;
   align-items: flex-end;
@@ -192,9 +185,9 @@ html {
 .horaire-bloc {
   position: relative;
   text-align: left;
-  left: 850px;
-  bottom: 50px;
-  font-size: 12px;
+  left: 5.5em;
+  bottom: 2.5em;
+  font-size: 110%;
   transition: 0.5s ease-in-out;
 }
 
@@ -207,15 +200,15 @@ html {
 }
 
 .titre-horaire {
-  text-decoration: underline;
+  font-size: 31px;
 }
 
 .contact-bloc {
   position: relative;
   text-align: left;
-  left: 840px;
-  bottom: 74px;
-  font-size: 12px;
+  left: 20em;
+  bottom: 3em;
+  font-size: 110%;
   transition: 0.5s ease-in-out;
 }
 
@@ -228,7 +221,7 @@ html {
 }
 
 .titre-contact {
-  text-decoration: underline;
+  font-size: 31px;
 }
 
 .router-text {
@@ -247,15 +240,15 @@ html {
   color:#000000;
 } */
 
-.titre-footer {
+/* .titre-footer {
   position: relative;
   color: rgb(0, 0, 0);
   font-size: 170%;
   left: 450px;
   bottom: 250px;
-  /* text-decoration: underline; */
+  text-decoration: underline;
   z-index: 10;
-}
+} */
 
 .logo {
   position:absolute;
@@ -263,20 +256,20 @@ html {
   height: auto;
   top: 2%;
   left: 2%;
-  border-radius: 15px;
+  border-radius: 1em;
   box-shadow: 3px 3px darkgray;
   z-index: 2;
   transition: transform 0.5s ease;
 }
 
 body {
-    max-width: 1200px; /* Limite la largeur de la page */
+    max-width: 75em; /* Limite la largeur de la page */
     margin: 0 auto; /* Centre la page horizontalement */
     overflow-x: hidden; /* Empêche le débordement horizontal */
 }
 
 .page-container {
-  position: absolute; /* Le parent pour un positionnement absolu à l'intérieur */
+  position: absolute;
   padding-bottom: 300px; /* Assure qu'il y ait assez d'espace pour les éléments bas */
 }
 
@@ -284,34 +277,31 @@ body {
   position: relative;
   width: 20%;
   height: auto;
-  bottom: -250px;
-  left: -100px;
-  border-radius: 15px;
+  bottom: -15.6em;
+  right: -260%;
+  border-radius: 1em;
   box-shadow: 3px 3px darkgray;
   z-index: 2;
   transition: transform 0.5s ease-in-out;
 }
 
 .triangle-bas {
-  position: relative; /* Le rend fixé par rapport à la fenêtre */
-  bottom: -450px; /* Place l'élément tout en bas de la page */
-  left: -150px; /* Optionnel si tu veux que l'octogone touche le bord gauche */
+  position: absolute; /* Positionnement par rapport au parent ou à la fenêtre */
+  bottom: 0; /* Place l'élément tout en bas */
+  right: -236%; /* Place l'élément tout à droite */
   width: 300px;
   height: 300px;
   background: radial-gradient(circle at top left, white 10%, rgba(18, 62, 99, 1) 70%);
-  transform: rotate(160deg);
+  transform: rotate(0deg); /* Pas de rotation nécessaire pour un triangle standard */
   clip-path: polygon(
-    30% 0%,  /* Coin supérieur gauche */
-    70% 0%,  /* Coin supérieur droit */
-    100% 30%, /* Coin droit supérieur */
-    100% 70%, /* Coin droit inférieur */
-    70% 100%, /* Coin inférieur droit */
-    30% 100%, /* Coin inférieur gauche */
-    0% 70%,   /* Coin gauche inférieur */
-    0% 30%    /* Coin gauche supérieur */
+    0% 0%,   /* Sommet supérieur gauche */
+    100% 100%, /* Coin inférieur droit */
+    0% 100%  /* Coin inférieur gauche */
   );
+  rotate: 270deg;
   z-index: 1;
 }
+
 
 .logo:hover {
   transform: scale(1.2);
@@ -341,25 +331,27 @@ body {
     pointer-events: none;
     z-index: 1;
 }
-
 .navbar {
   position: absolute;
   top: 2%;
   right: 0%;
+  width: 57%;
+  height: 2%;
   display: flex;
-  gap: 45px; /* Espace entre les liens */
-  padding: 10px 20px;
-  border-radius: 8px;
+  gap: 6%;
+  padding: 1% 2%; 
+  border-radius: 20px;
+  align-items: center;
   box-shadow: 2px 2px 8px rgba(18, 62, 99, 1);
-  background-color: rgba(18, 62, 99, 0.8);
+  background-color: rgba(18, 62, 99, 0.9);
   opacity: 1;
   z-index: 4;
 }
 
-.navbar a , .dropdown-toggle , .dropdown-toggle2{
+.navbar a, .dropdown-toggle, .dropdown-toggle2 {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: 13px;
+  font-size: 85%;
   font-weight: bold;
   z-index: 6;
 }
@@ -371,11 +363,11 @@ body {
 .navbar span {
   position: absolute;
   top: 0;
-  left: 0; 
+  left: 0;
   width: 8%;
-  height: 50%;
+  height: 62%; /* Hauteur restée fixe car en pourcentage */
   background: rgb(169, 169, 169);
-  border-radius: 8px;
+  border-radius: 20px;
   z-index: 5;
   transition: .5s ease 0s ease-out;
   opacity: 0;
@@ -386,44 +378,44 @@ body {
   transform: scale(0.9);
 }
 
-
 /* Acceuil */
 .navbar a:nth-child(1):hover~span {
   opacity: 70%;
-  width: 6%;
-  left: 0;
+  width: 8%;
+  left:0%;
+  color: black;
 }
 
 /* Qui sommes nous ? */
 .navbar a:nth-child(2):hover~span {
-  left: 95px;
-  width: 12%;
+  left: 12%;
+  width: 15%;
   opacity: 70%;
 }
 
 /* Produits */
 .navbar a:nth-child(3):hover~span {
-  left: 275px;
+  left: 35%;
   opacity: 70%;
 }
 
 /* Services et métrologie */
 .navbar a:nth-child(4):hover~span {
-  left: 400px;
+  left: 50%;
   opacity: 70%;
 }
 
 /* Partenaire */
 .navbar a:nth-child(5):hover~span {
-  left: 550px;
-  width: 6%;
+  left: 72%;
+  width: 8.5%;
   opacity: 70%;
 }
 
 /* Contact */
 .navbar a:nth-child(6):hover~span {
-  left: 647px;
-  width: 6%;
+  left: 85%;
+  width: 8%;
   opacity: 70%;
 }
 

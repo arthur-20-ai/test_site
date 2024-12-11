@@ -1,6 +1,13 @@
 
 <template>
-    <div class="img-ps">photo pb</div>
+    <div>
+        <img class="image-quisommesnous" src="../../assets/photo/instal_pontbs.jpg" alt="secteurs">
+        <br>
+        <div class="bandeau_titre">
+            <div class="partenaire_titre">Pesage Statique</div>
+            <div class="barre_blanche"></div>
+        </div>
+    </div>
     <h1>Pesage Statique</h1>
         <br>
         <br>
@@ -40,12 +47,6 @@
         <div>
             <div class="img-silo">pesage embarqué</div>
             <div class="text-silo">Le système CNP s'adapte très facilement sur tous type  de chargeur télescopiques (Manitou, JCB, Merlo... ) et permet une accroche rapide des différents outils ( fourches, godets, pinces... ).</div>
-        </div>
-        <div>
-            <div class="text-carre1">text humidimetre</div>
-            <div class="img-carre1"></div>
-            <div class="text-carre2">text proteine</div>
-            <div class="img-carre2"></div>
         </div>
         <br>
         <h1 style="text-decoration: underline;">Demande de devis ou contact :</h1>

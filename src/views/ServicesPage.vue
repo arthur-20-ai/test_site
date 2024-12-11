@@ -20,7 +20,7 @@
                à 30 kg, et tous les ans dans les autres cas. Pour les instruments de plus de 5 tonnes, une vérification
                annuelle est obligatoire, accompagnée d'une révision périodique tous les 2 ans (vignette verte à apposer
                sur l'équipement). Nous proposons également des services de réparations et de maintenance pour tous types
-               de dispositifs de pesage afin d’assurer leur bon fonctionnement et leur précision en toute circonstance.</li>
+               de dispositifs de pesage afin d'assurer leur bon fonctionnement et leur précision en toute circonstance.</li>
             <br>
             <li class="text-prestation">Vente et contrôle interne de matériel de pesage <br>
               Nous vous offrons une large gamme de balances et instruments de pesage, adaptés à tous les besoins :
@@ -80,9 +80,8 @@
            1- Faire verifier ses instruments à usage réglementé :
               - Tous les 2 ans pour la vente direct au public de portée inférieur ou égale à 30kg
               - Tous les ans, dans les autres cas
-          
            2- S'assurer :
-              - 
+              - que le client soit satisfait
          -->
 
     </div>
@@ -93,6 +92,7 @@
 h1 {
     text-align: center;
 }
+
 
 div {
     text-align: center;
@@ -115,12 +115,13 @@ div {
   font-size: 20px;
 }
 
-/* router-link {
+ router-link {
   cursor: pointer;
   color: blue;
   text-decoration: underline;
 }
 
+/*
 router-link:hover {
   color: red;
 } */

@@ -30,18 +30,13 @@
             <img class="image-acc" src="../../assets/photo/Pont_bascule.jpg" alt="image 1">
         </div>
     </div>
-    <div class="dots">
-        <label for="slide1" class="dot"></label>
-        <label for="slide2" class="dot"></label>
-        <label for="slide3" class="dot"></label>
-        <label for="slide4" class="dot"></label>
-    </div>
     </div>
         <br>
         <br>
         <br>
         <br>
-        <div class="pres-cnp"> Spécialiste dans le domaine du pesage et de la mesure CNP met à la disposition des utilisateurs industriels toute une gamme de produits fiables et performants, alliant simplicité d'utilisation et haute technicité pour des applications standards ou bien spécifiques.</div>
+        <div class="pres-cnp"> 
+            CNP, expert en pesage et mesure, propose aux industriels une large gamme de produits alliant fiabilité, performance et simplicité d'utilisation. Que ce soit pour des applications standards ou spécifiques, nos solutions répondent aux exigences les plus pointues, garantissant à la fois précision et haute technicité.        </div>
         <br>
         <br>
         <br>
@@ -51,26 +46,31 @@
         <br>
         <br>
         <br>
-        <h1>Nos Spécialités</h1>
+        <h1>Nos Spécialitées :</h1>
         <br>
         <br>
         <div class="triangleacc-container">
             <router-link to="/PesageStatique">
             <div class="triangleacc triangle1">
-                    <div class="label">&nbsp;&nbsp;&nbsp;Pesage Statique</div>
+                    <div class="label">Pesage Statique</div>
                 </div>
             </router-link>
             <router-link to="/PesageDynamique">
             <div class="triangleacc triangle2">
-                <div class="label">&nbsp;&nbsp;&nbsp;Pesage Dynamique</div>
+                <div class="label">Pesage Dynamique</div>
             </div>
         </router-link>
         <router-link to="/Humidimetre">
             <div class="triangleacc triangle3">
-                <div class="label">&nbsp;&nbsp;&nbsp;Humidimètre et analyse de prot</div>
+                <div class="label">Humidimètre et analysateur <br> de protéine</div>
             </div>
         </router-link>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <br>
         <br>
         <br>
@@ -114,7 +114,7 @@ h1 {
 .triangleacc-container {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 5em;
 }
 
 .triangleacc-container a:link,
@@ -126,30 +126,25 @@ h1 {
 }
 
 .triangleacc {
-    width: 250px; /* Largeur du triangle */
-    height: 250px; /* Hauteur du triangle */
-    border: 5px transparent black;
+    width: 20em; /* Largeur de la forme */
+    height: 18em; /* Hauteur de la forme */
     background-size: cover; /* Fait en sorte que l’image remplisse le conteneur */
     background-position: center;
+    border: 1px solid black;
     clip-path: polygon(
-    28% 10%,  /* Coin supérieur gauche */
-    50% 5%,  /* Arête supérieure */
-    72% 10%,  /* Coin supérieur droit */
-    95% 28%, /* Arête droite supérieure */
-    100% 50%, /* Coin milieu droit */
-    95% 72%, /* Arête droite inférieure */
-    72% 95%, /* Coin inférieur droit */
-    50% 100%, /* Arête inférieure */
-    28% 95%, /* Coin inférieur gauche */
-    5% 72%,  /* Arête gauche inférieure */
-    0% 50%,   /* Coin milieu gauche */
-    5% 28%   /* Arête gauche supérieure */
-);
+        25% 0%,    /* Coin supérieur gauche */
+        75% 0%,    /* Coin supérieur droit */
+        100% 50%,  /* Milieu du côté droit */
+        75% 100%,  /* Coin inférieur droit */
+        25% 100%,  /* Coin inférieur gauche */
+        0% 50%     /* Milieu du côté gauche */
+    );
     transition: clip-path 1s ease-in-out, border-radius 0.2s ease-in-out;
     overflow: hidden;
     position: relative;
     cursor: pointer;
 }
+
 
 .triangle1 {
     background-image: url('../../assets/photo/Pont_bascule.jpg');
@@ -158,6 +153,7 @@ h1 {
 
 .triangle2 {
     background-image: url('../../assets/photo/Pont_rail.jpg');
+    bottom: -10em;
 }
 
 .triangle3 {
@@ -168,22 +164,22 @@ h1 {
 
 /* Transformation en cercle au survol */
 .triangleacc:hover {
-    border: solid;
-    border-radius: 100%;
-    clip-path: circle(50%);
+    border-radius: 80%;
+    border: 2px solid black;
+    clip-path: circle(45%);
     transform: scale(1.1);
 }
 
 /* Bandeau avec texte en bas du triangle */
 .triangleacc .label {
     position: absolute;
-    top: 145px;
+    bottom: 0em;
     width: 100%;
-    padding: 5px 0;
+    padding: 1em 0;
     background-color: #123e63cc; /* Couleur du bandeau bleu */
     color: white;
-    text-align: left;
-    font-size: 14px;
+    text-align: center;
+    font-size: 90%;
     z-index: 3;
 }
 
@@ -201,10 +197,10 @@ h1 {
 }
 
 .pres-cnp {
-    width: 700px;
-    padding-left: 250px;
+    width: 30em;
+    padding-left: 9em;
     text-align: center;
-    font-size: 25px;
+    font-size: 155%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
@@ -246,8 +242,8 @@ h1 {
     position: absolute;
     text-align: center;
     text-decoration: underline;
-    left: 150px;
-    bottom: 350px;
+    left: 4em;
+    bottom: 7.8em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 280%;
     color: rgb(255, 255, 255);
@@ -286,10 +282,10 @@ h1 {
 
 .slider-2 {
     position: relative;
-    width: 1370px;
-    height: 650px;
-    top: -10px;
-    left: -40px;
+    width: 120%;
+    height: 40em;
+    top: -0.6em;
+    left: -2em;
     margin: 0px auto;
     overflow: hidden;
     border: 1px solid #000000;
@@ -361,34 +357,6 @@ input[type="radio"] {
 
 #slide4:checked ~ .slider {
     transform: translateY(-300%);
-}
-
-/* Dots styling */
-.dots {
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-}
-
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.dot:hover,
-input[type="radio"]:checked + label.dot {
-    background-color: #717171;
-}
-
-.dot:active {
-    transform: scale(1.2); /* Adds a slight scaling effect on click */
-    background-color: #555;
 }
 
 </style>
