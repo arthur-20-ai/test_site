@@ -269,7 +269,6 @@ body {
     overflow-x: hidden; /* Empêche le débordement horizontal */
 }
 
-
 .page-container {
   position: absolute;
   padding-bottom: 300px; /* Assure qu'il y ait assez d'espace pour les éléments bas */

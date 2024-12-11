@@ -18,35 +18,28 @@
 
         <div>
         <div class="img-pb">
-            <div class="slider-statique">
-                <div class="slider-s">
-                    <div class="slide-s"><img src="../../assets/photo/pb/image_pb_1.png" alt="Image 1" /></div>
-                    <div class="slide-s"><img src="../../assets/photo/pb/pont_bascule_3.jpg" alt="Image 2" /></div>
-                    <div class="slide-s"><img src="../../assets/photo/pb/pont_bascule_fosse.png" alt="Image 3" /></div>
-                    <div class="slide-s"><img src="../../assets/photo/pb/pont_bascule_hors_sol.png" alt="Image 4" /></div>
+            <div class="slide-s"><img src="../../assets/photo/pb/image_pb_1.png" alt="Image 1" /></div>
+            <!-- <div class="slide-s"><img src="../../assets/photo/pb/pont_bascule_3.jpg" alt="Image 2" /></div> -->
+                    <!-- <div class="slide-s"><img src="../../assets/photo/pb/pont_bascule_fosse.png" alt="Image 3" /></div> -->
+                   <!-- <div class="slide-s"><img src="../../assets/photo/pb/pont_bascule_hors_sol.png" alt="Image 4" /></div>  -->
 
 
-                    <div class="slide-s"><img src="../../assets/photo/pb/image_pb_1.png" alt="Image 1" /></div>
+                   <!-- <div class="slide-s"><img src="../../assets/photo/pb/image_pb_1.png" alt="Image 1" /></div>
                     <div class="slide-s"><img src="../../assets/photo/pb/pont_bascule_3.jpg" alt="Image 2" /></div>
                     <div class="slide-s"><img src="../../assets/photo/pb/pont_bascule_fosse.png" alt="Image 3" /></div>
-                    <div class="slide-s"><img src="../../assets/photo/pb/pont_bascule_hors_sol.png" alt="Image 4" /></div>                </div>
-            </div>
-        <!--<div class="banner">
-            <div class="slider" style="--quantity: 4">
-            <div class="item" style="--position: 1"><img src="../../assets/photo/pb/image_pb_1.png" alt=""></div>
-            <div class="item" style="--position: 2"><img src="../../assets/photo/pb/pont_bascule_3.jpg" alt=""></div>
-            <div class="item" style="--position: 3"><img src="../../assets/photo/pb/pont_bascule_fosse.png" alt=""></div>
-            <div class="item" style="--position: 4"><img src="../../assets/photo/pb/pont_bascule_hors_sol.png" alt=""></div>
-        </div> -->
-                pont bascule</div>
-            <div class="text-pb">Les ponts bascules CNP sont de construction mondiale de type compact à capteurs de pesage. <br> <br>
-            Ils existent en version encastrée ou hors sol, de faible hauteur, ils peuvent être facilement mis en place, avec ou sans génie civil.</div>
+                    <div class="slide-s"><img src="../../assets/photo/pb/pont_bascule_hors_sol.png" alt="Image 4" /></div>              -->
         </div>
+        <div class="text-pb">Les ponts bascules CNP, d'une conception mondiale et compacte avec capteurs de pesage, sont disponibles en versions encastrée ou hors-sol. Grâce à leur faible hauteur, ces équipements sont faciles à installer, avec ou sans travaux de génie civil, offrant ainsi une solution flexible et rapide pour diverses applications.
+            <br> <br>
+        </div>
+    </div>
         <br>
         <br>
         <div>
-            <div class="img-silo">pesage embarqué</div>
-            <div class="text-silo">Le système CNP s'adapte très facilement sur tous type  de chargeur télescopiques (Manitou, JCB, Merlo... ) et permet une accroche rapide des différents outils ( fourches, godets, pinces... ).</div>
+            <div class="img-silo">pesage embarqué ???????????????</div>
+            <div class="text-silo">
+                Le système CNP s'adapte aisément à tous types de chargeurs télescopiques (Manitou, JCB, Merlo, etc.) et permet un accouplement rapide et sécurisé des différents outils (fourches, godets, pinces, etc.), offrant ainsi une grande flexibilité et efficacité sur le terrain.
+            </div>
         </div>
         <br>
         <h1 style="text-decoration: underline;">Demande de devis ou contact :</h1>
@@ -87,33 +80,22 @@
 h1 {
     text-align: center;
 }
-.slider-statique {
-    position: relative;
-    width: 368px; /* Largeur du conteneur */
-    height: 260px; /* Hauteur du conteneur */
-    overflow: hidden; /* Cache le débordement des images */
-    border: 1px solid #000000; /* Bordure */
+
+.img-pb .slide-s {
+    width: 100%; /* Chaque slide occupe la totalité du conteneur */
+    height: 100%; /* S'adapte à la hauteur du conteneur */
+    display: flex; /* Centrage de l'image dans le conteneur */
+    align-items: center;
+    justify-content: center;
 }
 
-.slider-statique .slider-s {
-    display: flex; /* Disposition horizontale des slides */
-    height: 100%;
-    width: 100%;
-    zoom: 50%;
-    animation: slider-horizontal 15s linear infinite; /* Animation fluide et continue */
+.img-pb .slide-s img {
+    width: 100%; /* Ajuste la largeur de l'image pour remplir le conteneur */
+    height: 100%; /* Ajuste la hauteur de l'image */
+    object-fit: cover; /* S'assure que l'image remplit le conteneur sans distorsion */
+    border-radius: inherit; /* Adopte le même arrondi que le conteneur */
 }
 
-.slider-statique .slide-s {
-    flex-shrink: 0;
-    width: 1068px; /* Chaque slide occupe exactement la largeur du conteneur */
-    height: 100%;
-}
-
-.slider-statique .slide-s img {
-    width: 100%; /* Ajuste les images pour remplir chaque slide */
-    height: 100%; /* Ajuste la hauteur des images */
-    object-fit: cover; /* Ajuste les images à leur conteneur */
-}
 
 @keyframes slider-horizontal {
     0% {
@@ -231,101 +213,96 @@ h1 {
     border: 1px solid #000000;
 }
 
-
 .img-pb {
     position: relative;
-    width: 370px;
-    height: 260px;
-    border: 2px solid black;
-    border-color: black;
-    border-radius: 15px;
+    left: 8vw;
+    width: 45vw; /* Largeur relative à la largeur de la fenêtre */
+    height: 45vh; /* Hauteur relative à la hauteur de la fenêtre */
+    /* border: 2px solid black; */
+    border-radius: 15px; /* Ajoute un arrondi aux coins */
     text-align: center;
-    color: black;
-    left: 50px;
-    bottom: -100px;
-    object-fit: cover; /* Adapte l'image pour remplir le conteneur sans distorsion */
-    overflow-y: hidden;
+    overflow: hidden; /* Empêche le contenu de dépasser les limites */
     transition: 0.5s ease-in-out;
 }
 
 .img-pb:hover {
-    transform: scale(1.8);
-    left: 180px;
+    transform: scale(1.2);
+    left: 12vh;
+    border: 2px solid black;
 }
 
 .text-pb {
     position: relative;
-    width: 370px;
-    height: 260px;
-    border: 2px solid black;
+    width: 35vw;
+    height: 30vh;
+    /* border: 2px solid black; */
     border-color: black;
     border-radius: 15px;
     text-align: center;
     color: black;
-    left: 750px;
-    bottom: 160px;
+    left: 62vw;
+    bottom: 40vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
     transition: 0.5s ease-in-out;
-    background-color: rgba(18, 62, 99, 0.5);
     overflow-y: auto;
     display: flex;               /* Active Flexbox */
     justify-content: center;      /* Centre horizontalement */
     align-items: center;        
-    transition: 0.5s ease-in-out;
+    transition: 0.1s ease-in 0.8s step-end;
 }
 
 .text-pb:hover {
-    color: white;
-    background: #123E63;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
+    border: 2px solid black;
+
 }
 
 .text-silo {
     position: relative;
-    width: 370px;
-    height: 260px;
-    border: 2px solid black;
+    width: 35vw;
+    height: 30vh;
+    /* border: 2px solid black; */
     border-color: black;
     border-radius: 15px;
     text-align: center;
     color: black;
-    left: 50px;
-    bottom: 160px;
+    left: 2vw;
+    bottom: 40vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
     transition: 0.5s ease-in-out;
-    background-color: rgba(18, 62, 99, 0.5);
     overflow-y: auto;
     display: flex;               /* Active Flexbox */
     justify-content: center;      /* Centre horizontalement */
     align-items: center;        
-    transition: 0.5s ease-in-out;
+    transition: 0.1s ease-in 0.8s step-end;
 }
 
 .img-silo {
     position: relative;
-    width: 370px;
-    height: 260px;
-    border: 2px solid black;
-    border-color: black;
-    border-radius: 15px;
+    left: 48vw;
+    width: 45vw; /* Largeur relative à la largeur de la fenêtre */
+    height: 45vh; /* Hauteur relative à la hauteur de la fenêtre */
+    /* border: 2px solid black; */
+    border-radius: 15px; /* Ajoute un arrondi aux coins */
     text-align: center;
-    color: black;
-    left: 750px;
-    bottom: -100px;
-    overflow-y: auto;
+    overflow: hidden; /* Empêche le contenu de dépasser les limites */
     transition: 0.5s ease-in-out;
 }
 
 .img-silo:hover {
+    border: 2px solid black;
+
     transform: scale(1.2);
+    left: 48vw;
 }
 
 .text-silo:hover {
-    color: white;
+    border: 2px solid black;
+    /* color: white;
     background: #123E63;
-    transform: scale(1.1);
+    transform: scale(1.1); */
 }
 
 .text-carre1 {
