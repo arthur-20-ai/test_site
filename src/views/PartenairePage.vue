@@ -63,7 +63,7 @@
         <br>
             <br>
             <!-- v-if="isAuthenticated" -->
-        <div id="counter">
+        <!-- <div id="counter">
             <h1>Nombre de visite:</h1>
             <br>
             0
@@ -71,7 +71,7 @@
             <br>
             <br>
             <br>
-        </div>
+        </div> -->
 
         <div class="partenaire-section">
         <div class="titre-partenaire-pesage">Pesage :</div>
@@ -233,7 +233,7 @@
 
 <script>
 import ModalePage from './ModalePage.vue';
-const countapi = require('countapi-js');
+// const countapi = require('countapi-js');
 
 export default {
     name: 'PartenairePage',
@@ -273,20 +273,20 @@ export default {
                 this.isAuthenticated = false;
             }
         },
-        fetchCounter() {
-            // Utilisation de countapi-js pour obtenir et afficher le compteur
-            countapi.visits('default').then((result) => {
-                const counter = document.getElementById("counter");
-                counter.innerHTML = result.value;
-                console.log(result.value);
-            }).catch((error) => {
-                console.error('Erreur lors de la récupération des données:', error);
-            });
-        }
+        // fetchCounter() {
+        //     // Utilisation de countapi-js pour obtenir et afficher le compteur
+        //     countapi.visits('default').then((result) => {
+        //         const counter = document.getElementById("counter");
+        //         counter.innerHTML = result.value;
+        //         console.log(result.value);
+        //     }).catch((error) => {
+        //         console.error('Erreur lors de la récupération des données:', error);
+        //     });
+        // }
     },
-    mounted() {
-        this.fetchCounter();
-    }
+    // mounted() {
+    //     this.fetchCounter();
+    // }
 };
 </script>
 

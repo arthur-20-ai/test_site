@@ -236,8 +236,12 @@ h1 {
 }
 
 .pres-cnp {
+    position: relative;
     width: 30em;
-    padding-left: 9em;
+    height: 30vh;
+    background-color: #123E63;
+    align-items: center;
+    padding-left: 11em;
     text-align: center;
     font-size: 155%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

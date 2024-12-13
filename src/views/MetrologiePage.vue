@@ -62,7 +62,7 @@ Dans le cadre de la métrologie légale, nous accompagnons nos clients dans le r
 En tant qu’entreprise spécialisée, nous nous engageons à vous fournir des instruments de pesage qui répondent aux plus hauts standards de qualité et de précision, tout en assurant leur conformité avec les exigences de la métrologie légale. Cela vous permet de travailler en toute sérénité, en sachant que vos opérations de pesage sont fiables et conformes aux obligations légales.
 <br>
 <br>
-Nous agissons sur ses 2 type d'instruments de pesage :
+Nous agissons sur Ces 2 types d'instruments de pesage :
 <br>
 <br>
 

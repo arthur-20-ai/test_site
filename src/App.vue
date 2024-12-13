@@ -7,7 +7,7 @@
     <router-link 
       to="/" 
       :class="{'active-link': $route.path === '/'}"
-    >Acceuil</router-link>
+    >Accueil</router-link>
     <router-link 
       to="/QuiSommesNous" 
       :class="{'active-link': $route.path === '/QuiSommesNous'}"
@@ -17,7 +17,7 @@
       <ul class="dropdown-menu">
         <li style="pointer-events: none;"></li>
         <li><router-link to="/PesageStatique">Pesage Statique</router-link></li>
-        <li><router-link to="/PesageDynamique">Pesage Dynamique</router-link></li>
+        <!-- <li><router-link to="/PesageDynamique">Pesage Dynamique</router-link></li> -->
         <li><router-link to="/Humidimetre">Humidimètre</router-link></li>
       </ul>
     </div>
@@ -163,8 +163,9 @@ html {
 .black-footer {
   position: absolute;
   width: 130%;
-  height: 1,5em;
+  height: 1em;
   left: -20.5em;
+  /* top: 173em; */
   background-color: #000000;
   z-index: 2;
 }
@@ -172,14 +173,16 @@ html {
 .footer {
   position: relative;
   flex: 1 0 auto;
-  border-top: 3px dotted black;
-  width: 110%;
-  bottom: -0.8em;
-  left: -3em;
-  height: 20em; /* La hauteur totale du footer */
+  width: 100%; /* Ajustement dynamique */
+  bottom: 0; /* Assure que le footer reste en bas */
+  left: -1em;
+  height: 53.7vh; /* Une hauteur qui fonctionne pour les grands écrans */
   overflow: hidden;
   display: flex;
   align-items: flex-end;
+  padding: 1em; /* Espace intérieur */
+  box-sizing: border-box;
+  background-color: #ffffff; /* Couleur pour tester les limites */
 }
 
 .horaire-bloc {
@@ -187,7 +190,7 @@ html {
   text-align: left;
   left: 5.5em;
   bottom: 2.5em;
-  font-size: 110%;
+  font-size: 90%;
   transition: 0.5s ease-in-out;
 }
 
@@ -264,14 +267,14 @@ html {
 
 body {
     width: 100vw; /* Assure que le corps occupe toute la largeur de la fenêtre */
-    height: 100vh; /* Assure que le corps occupe toute la hauteur de la fenêtre */
+    height: 100vh;
     margin: 0; /* Supprime les marges par défaut du navigateur */
     overflow-x: hidden; /* Empêche le débordement horizontal */
 }
 
 .page-container {
   position: absolute;
-  padding-bottom: 300px; /* Assure qu'il y ait assez d'espace pour les éléments bas */
+  padding-bottom: 45vh; /* Assure qu'il y ait assez d'espace pour les éléments bas */
 }
 
 .logo-bas {
@@ -288,10 +291,10 @@ body {
 
 .triangle-bas {
   position: absolute; /* Positionnement par rapport au parent ou à la fenêtre */
-  bottom: 0; /* Place l'élément tout en bas */
+  bottom: -1em; /* Place l'élément tout en bas */
   right: -236%; /* Place l'élément tout à droite */
-  width: 300px;
-  height: 300px;
+  width: 29vw;
+  height: 50vh;
   background: radial-gradient(circle at top left, white 10%, rgba(18, 62, 99, 1) 70%);
   transform: rotate(0deg); /* Pas de rotation nécessaire pour un triangle standard */
   clip-path: polygon(
@@ -302,7 +305,6 @@ body {
   rotate: 270deg;
   z-index: 1;
 }
-
 
 .logo:hover {
   transform: scale(1.2);
@@ -332,6 +334,7 @@ body {
     pointer-events: none;
     z-index: 1;
 }
+
 .navbar {
   position: absolute;
   top: 2%;
@@ -352,7 +355,7 @@ body {
 .navbar a, .dropdown-toggle, .dropdown-toggle2 {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: 85%;
+  font-size: 2.1vh;
   font-weight: bold;
   z-index: 6;
 }
@@ -408,14 +411,14 @@ body {
 
 /* Partenaire */
 .navbar a:nth-child(5):hover~span {
-  left: 72%;
+  left: 73.5%;
   width: 8.5%;
   opacity: 70%;
 }
 
 /* Contact */
 .navbar a:nth-child(6):hover~span {
-  left: 85%;
+  left: 86.5%;
   width: 8%;
   opacity: 70%;
 }
@@ -431,15 +434,15 @@ body {
 .dropdown-toggle {
   display: flex;
   align-items: center;
-  padding: 2px 2px;
-  gap: 10px;
+  padding: 0.2vw 0.2vw;
+  gap: 2vw;
 }
 
 .dropdown-toggle2 {
   display: flex;
   align-items: center; 
-  padding: 2px 2px;
-  gap: 10px;
+  padding: 0.2vw 0.2vw;
+  gap: 2vw;
 }
 
 
@@ -447,7 +450,7 @@ body {
   font-size: 8px;
   transition: transform 0.5s ease; /* Transition douce pour la rotation */
   display: inline-block;
-  margin-left: 1px;
+  margin-left: -0.5vw;
   color: rgb(255, 255, 255);
 }
 
@@ -459,13 +462,13 @@ body {
   margin: 0;
   position: absolute;
   text-align: left;
-  width: 130px;
-  top: 92%; /* Positionné juste sous le lien "Produits" */
-  left: -30px;
+  width: 12vw; /* Ajustement de la largeur avec vw */
+  top: 4vh; /* Positionnement en dessous du lien en utilisant vh */
+  left: -2vw; /* Déplacement horizontal en vw */
   background-color: rgba(18, 62, 99, 0.8);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  box-shadow: 0 1.5vh 2vw rgba(0, 0, 0, 0.2); /* Ombre adaptée à l'écran */
+  border-bottom-left-radius: 0.8em; /* Utilisation de em pour les arrondis */
+  border-bottom-right-radius: 0.8em;
   z-index: 5;
 }
 
@@ -474,25 +477,26 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 190px;
+  width: 15vw; /* Largeur en vw */
   position: absolute;
   text-align: left;
-  top: 92%; /* Positionné juste sous le lien "Produits" */
-  left: -10px;
+  top: 4.6vh; /* Positionnement vertical en vh */
+  left: -1vw; /* Positionnement horizontal en vw */
   background-color: rgba(18, 62, 99, 0.8);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  box-shadow: 0 1.5vh 2vw rgba(0, 0, 0, 0.2); /* Ombre avec vh et vw */
+  border-bottom-left-radius: 0.8em; /* Utilisation d'em pour l'arrondi */
+  border-bottom-right-radius: 0.8em;
   z-index: 5;
 }
 
 .dropdown-menu li {
-  padding: 10px;
+  padding: 0.5em; /* Utilisation de em pour les espacements */
 }
 
 .dropdown-metro li {
-  padding: 10px;
+  padding: 0.5em; /* Utilisation de em pour les espacements */
 }
+
 
 .dropdown-menu li a {
   text-decoration: none;
